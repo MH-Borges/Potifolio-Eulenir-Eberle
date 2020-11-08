@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Eulenir - Psicologia Clínica</title>
+<link rel="icon" href="imagens/icon.png" />
+<link rel="stylesheet" href="style_smartp.css" media="screen and (max-width: 640px)" />
+<link rel="stylesheet" href="Style.css" media="screen and (min-width: 641px)" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery("#btn_UP").hide();
+
+jQuery('a#btn_UP').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 800);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 1000) {
+            jQuery('#btn_UP').fadeIn();
+         } else {
+            jQuery('#btn_UP').fadeOut();
+         }
+     });
+});
+</script>
+
+</head>
+
+
+
+<body>
+
+<a id="btn_UP"></a>
+    
+<header>
+	<div class="Head">
+    	<a href="https://eulenireberle.com.br"><img class="logo" src="imagens/Logo_Principal.png" /></a>   
+   		<nav>
+        	<ul>
+            	<li><a href="https://eulenireberle.com.br">Home</a></li>
+           		<li><a href="eulenir.html">Quem Sou</a></li>
+            	<li><a href="serviço.html">Meu Trabalho</a></li>
+            	<li><a href="https://eulenireberle.com.br/Blog">Blog</a></li>
+            	<li><a href="contato.html">Contato</a></li>
+        	</ul>
+            
+    	</nav>
+       	<div id="icon_HD">
+        <a href="https://www.facebook.com/eulenireberlepsicologa/"><img class="iconHD" src="imagens/facebook green.png"/></a>
+        <a href="https://www.instagram.com/eulenireberlepsicologa/"><img class="iconHD" src="imagens/insta green.png"/></a>
+        <a href="http://api.whatsapp.com/send?phone=554199066371"><img class="iconHD" src="imagens/whatsapp green1.png"/></a>
+        </div>
+	</div>
+</header>
+
+<div id="corpo_cont">
+	<p id="cont">Contato</p>
+        <div id="labels">
+        	<center><form id="forma" method="post" action="email.php">
+				
+                <label class="text">Nome e Sobrenome</label><br /><br />
+                <input type="text" name="info" placeholder="Nome e Sobrenome" class="inside" required="required"/>
+                
+                <label class="text">Email Completo</label><br /><br />
+                <input type="email" name="email" placeholder="seuemail@dominio.com" class="inside" required="required" />
+                
+                <label class="text">Mensagem</label><br /><br />
+                <textarea name="mensagem" rows="15" cols="70" placeholder="Digite Aqui sua Mensagem"></textarea><br /><br /><br />
+                
+                <input type="submit" value="Enviar" class="envia"/>
+			</form></center>
+        </div>
+        
+        <div id="icons_CT">
+            <ul>
+            	<li>
+                	<a href="https://goo.gl/maps/eKnVVk816N1N8Vkt9">
+                    	<p class="icon_inside_up">Onde Estamos</p>
+                        <center><img class="icon_info" src="imagens/Casa.png" /></center>
+                        <p class="icon_inside">Praça Zacarias - 80, cjto1005 <br /> Centro - Curitiba, PR</p>
+                    </a>
+                </li>
+                
+                <li>
+                	<a href="mailto:eulenir.eberle@gmail.com">
+                    	<p class="icon_inside_up">Envie Uma Mensagem</p>
+                        <center><img class="icon_info" src="imagens/email green.png" /></center>
+                        <p class="icon_inside">eulenir.eberle@gmail.com</p>
+                    </a>
+                </li>
+                
+                <li>
+                	<a href="http://api.whatsapp.com/send?phone=554199066371">
+                    	<p class="icon_inside_up">Fale Conosco</p>
+                        <center><img class="icon_info" src="imagens/whatsapp green.png" /></center>
+                        <p class="icon_inside"></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+		<center><iframe id="mapa_con" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57650.664225089866!2d-49.273312!3d-25.432696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce46d69774d4b%3A0x14a8139deb9b6a85!2sED.%20JO%C3%83O%20ALFREDO%20-%20Pra%C3%A7a%20Zacarias%2C%2080%20-%20Centro%2C%20Curitiba%20-%20PR%2C%2080020-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1583186919487!5m2!1sen!2sus"></iframe></center>        
+</div>
+
+<footer>
+	<div id="inside_FT">
+    	<p class="nulo">...</p>
+		
+		
+        <p id="logo_FT"><a href="https://eulenireberle.com.br"><img id="logo_BR" src="imagens/Logo_Branca.png"/></a></p>
+    	
+        <div id="icons">
+        	<div class="bt_icon"><a href="mailto:eulenir.eberle@gmail.com">Email</a></div> 
+            <div class="bt_icon"><a href="https://www.facebook.com/eulenireberlepsicologa/">Facebook</a></div>
+            <div class="bt_icon"><a id="insta" href="https://www.instagram.com/eulenireberlepsicologa/">Instagram</a></div>
+            <div class="bt_icon"><a href="http://api.whatsapp.com/send?phone=554199066371">WhatsApp</a></div>    
+		</div>
+        <p id="txt_FT">Todos os direitos reservados a Eulenir Eberle.</p>
+    	
+        <div id="links">
+        	<div class="bt_link"><a href="https://eulenireberle.com.br/Blog">Blog</a></div>
+            <div class="bt_link"><a href="https://eulenireberle.com.br">Home</a></div>
+            <div class="bt_link"><a href="contato.html">Contatos</a></div>
+            <div class="bt_link"><a href="eulenir.html">Quem Sou</a></div>
+            <div class="bt_link"><a href="serviço.html">Meu Trabalho</a></div>
+        </div>
+        
+    </div>
+
+</footer>
+</body>
+</html>

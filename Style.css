@@ -1,0 +1,885 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding: 0px;	
+}
+@font-face{
+    font-family:"Evertone Script";
+    src:url('Evertone Script.otf')
+}
+/***************CABEÇALHO************/
+
+.Head{
+	width:100%;
+	height:130px;
+	font-weight:bold;
+	background:#FFF;
+	position: fixed;
+	z-index: 999;
+}
+.logo{
+	width: 245px;
+	height: 110px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+nav{
+	position: fixed;
+	right: 200px;
+	top: 60px;
+}
+nav li{
+	margin-right: 10px;
+	display:inline;
+	font-family:Verdana, Geneva, sans-serif;
+	padding: 10px;
+}
+nav a {
+	text-transform: uppercase;
+	color: #589CA1;
+	font-size: 17px;
+	text-decoration: none;
+}
+nav a:hover {
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:1px;
+	padding-right:1px;
+	border-radius: 50px;
+	background:#58B9C0;
+	color:#333;
+}
+#icon_HD{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+   	top: 35px;
+    right: 20px;
+}
+#icon_HD a:hover{
+	border-radius: 10px;
+	background:#84D4DA;
+}
+.iconHD{
+	padding:10px;
+	width:40px;
+	height:40px;
+}
+
+/***************CABEÇALHO************/
+
+/***************SETA************/
+#btn_UP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: #003949;
+	border-radius: 40px;
+	border:#FFF 2px solid;
+    text-decoration: none;
+	z-index:998;
+}
+#btn_UP::after {
+    content: "↑";
+    font-size: 46px;
+    font-weight: bolder;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+#btn_UP:hover::after{
+    margin-top:-8px;
+}
+/***************SETA************/
+
+/***************BANNER************/
+
+#banner{
+	width:auto;
+	height:715px;
+	
+}
+#frontBN{
+	width:100%;
+	height:700px;
+	box-shadow: 0px 5px 30px 5px #000;
+}
+.banner_Msg{
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	width: 950px;
+	font-weight:bold;
+	font-size:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	color:#FFF;
+}
+#Msg_a{
+	margin-top: -390px;
+	padding-bottom: 25px;
+}
+/***************BANNER************/
+
+/***************SOBRE LENE************/
+
+#lene{
+	width:auto;
+	height:570px;
+}
+#title_eule{
+	margin-top:10px;
+	text-align:center;
+	font-size:55px;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline #589CA1;
+}
+#My_content{
+	border-radius: 30px;
+	margin-top:25px;
+	background-color:#E1E3E3;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	width:1100px;
+	height:450px;
+	font-size:20px;
+	text-align:left;
+	font-family:Verdana, Geneva, sans-serif;
+}
+#about{
+	padding-top:30px;
+}
+#foto_lene{
+	margin-left: -100px;
+	width:430px;
+	height:430px;
+	float:left;
+}
+
+/***************SOBRE LENE************/
+
+/***************SERVIÇOS************/
+
+#serviços{
+	width:auto;
+	height:900px;
+}
+#title_Servi{
+	margin-top:10px;
+	padding-top:15px;
+	text-align:center;
+	font-size:55px;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline #589CA1;
+}
+#under_TXT{
+	text-align:center;
+	color:#589CA1;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:28px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:20px;
+}
+#imgs_serv{
+	width: 950px;
+	height: 450px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 20px;
+}
+#IMG01, #IMG02{
+	width:350px;
+	height:450px;
+	margin-left: 70px;
+	display:inline-block;
+}
+#IMG01 a, #IMG02 a{
+	cursor:pointer;
+	display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+#IMG01 a:hover, #IMG02 a:hover{
+	cursor:pointer;
+	transform: scale(1.1);
+}
+#BLOCO_como{
+	width: 950px;
+	height: 150px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-20px;
+	padding: 30px;
+}
+#como_, #como_1{
+	vertical-align:text-top;
+	margin-left: 130px;
+	font-size:22px;
+	text-align:left;
+	display:inline-block;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#como_ a, #como_1 a{
+	color:#000;
+	text-decoration:none
+}
+.title_como{
+	color:#003040;
+	font-weight:bolder;
+	text-align:center;
+}
+/***************SERVIÇOS************/
+
+/***************LEVEZA************/
+#under_LV{
+	height: 650px;
+	width:100%;
+	background:url(imagens/logo%20repetida.png);
+	background-color:#589CA1;
+}
+#title_LV{
+	padding-top:20px;
+	color:#FFF;
+	text-align:center;
+	font-size:55px;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline #333;
+}
+#inside_LV{
+	width:1100px;
+	height:470px;
+	margin-left:auto;
+	margin-right:auto;
+	background:#50A5C0;
+	border-radius: 30px;
+	opacity: 0.8;
+	margin-top: 30px;
+}
+.text_LV{
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:25px;
+	text-align:left;
+	padding:30px;
+	padding-top:20px;
+}
+#botao_leve{
+	font-family:"Courier New", Courier, monospace;
+	font-size:20px;
+	text-align:center;
+	padding:10px;
+	margin-top:30px;
+}
+#botao_leve a{
+	font-weight:bold;
+	color:#000;
+	padding:20px;
+	text-decoration:none;
+	background:#E1E3E3;
+	border:#000 2px solid;
+	border-radius: 40px;
+	display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+#botao_leve a:hover{
+	background-color:#000;
+	color:#FFF;
+	border:#FFF 2px solid;
+	transform: scale(1.1);
+}
+
+/***************LEVEZA************/
+
+/***************Blog************/
+#Blog{
+	width:auto;
+	height:710px;
+}
+#title_Blog{
+	padding-top:20px;
+	color:#000;
+	text-align:center;
+	font-size:55px;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline #589CA1;
+}
+#blog_in{
+	width:1100px;
+	height:380px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+	padding: 20px;
+}
+.link_blog{
+	width: 300px;
+	height:360px;
+	display:inline;
+	margin-left:48px;
+}
+.link_blog a{
+	cursor:pointer;
+	display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.link_blog a:hover{
+	cursor:pointer;
+	transform: scale(1.1);
+}
+#Text_blog_in{
+	background:#E1E3E3;
+	width:1100px;
+	height:210px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: -60px;
+	padding: 20px;
+	border-top-left-radius:100px;
+	border-top-right-radius:100px;
+}
+#text_blog1, #text_blog2, #text_blog3{
+	width: 300px;
+	height:360px;
+	margin-left:48px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	text-align:center;
+	margin-top:30px;
+}
+#text_blog2{
+	margin-left:400px;
+	margin-top:-360px;
+}
+#text_blog3{
+	margin-left:760px;
+	margin-top:-360px;
+}
+/***************Blog************/
+
+/***************FOTO************/
+
+#photo{
+	width:100%;
+	height: 680px;
+	background-color:#E1E3E3;
+}
+#title_Phot{
+	font-size:55px;
+	font-weight:bold;
+	font-style:italic;
+	text-align:center;
+	text-decoration: underline #589CA1;
+	padding-top: 20px;
+}
+#Front_Phot{
+	border-radius:10px;
+	margin-top: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	background:#F9F9F9;
+	width:1295px;
+	height:500px;
+	list-style: none;
+}
+.mini{
+	height:auto;
+	width: 270px;
+	padding: 25px;
+}
+.lbox{
+	display:none;
+	visibility: hidden;
+	opacity: 0;
+}
+.lbox:target{
+	z-index:999;
+	display:block;
+	opacity: 1;
+	visibility:visible;
+	width: 100%;
+	height:100%;
+	top:0;
+	left:0;
+	background:rgba(10,10,10,.9);
+	position:fixed;
+}
+
+.box_img{
+	width:810px;
+	height: 590px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:20px;
+}
+.btn{
+	color:#FFF;
+	font-family:Arial;
+	text-decoration:none;
+	position:absolute;
+	width: 90px;
+	height:90px;
+	font-size: 60px;
+	text-align:center;
+}
+#prev{
+	left: 12%;
+	top:50%;
+}
+#next{
+	right: 12%;
+	top:50%;
+}
+#close{
+	top:100;
+	right: 12%;
+}
+
+/***************FOTO************/
+
+/***************DUVIDAS************/
+#request{
+	text-align:center;
+	width:100%;
+	height:420px;
+	background:url(imagens/CidadeGradiente.jpg);
+}
+
+#title_RQ{
+	padding-top: 30px;
+	font-size:55px;
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline #589CA1;
+	color:#000;
+}
+#msg_RQ{
+	padding-top: 70px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:32px;
+	color:#FFF;
+}
+#botao_RQ{
+	padding:20px;
+	padding-top: 75px;
+	font-family:"Courier New", Courier, monospace;
+	font-weight:bold;
+	font-size: 20px;
+}
+#botao_RQ a{
+	padding:20px;
+	text-decoration:none;
+	color:#FFF;
+	border:#FFF 3px solid;
+	border-radius: 40px;
+	display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+#botao_RQ a:hover{
+	transition:all .4s;
+	background:#FFF;
+	border:#000 2px solid;
+	color:#000;
+	border-radius: 0px;
+	transform: scale(1.1);
+}
+
+/***************DUVIDAS************/
+
+/***************RODAPÉ************/
+
+footer{
+	background:#003040;
+	width:100%;
+	height:250px;
+}
+#inside_FT{
+	margin-left:auto;
+	margin-right:auto;
+	width:1270px;
+	height: 250px;
+}
+.nulo{
+	font:Arial, Helvetica, sans-serif;
+	font-size:1px;
+	text-align:center;
+}
+#logo_FT{
+	width: 370px;
+	height:180px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+#logo_BR{
+	padding:10px;
+	width: 325px;
+	height:150px;
+}
+#icons{
+	margin-top: -180px;
+	margin-left: 55px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	float:left;
+	padding: 20px;
+}
+.bt_icon{
+	padding:10px;
+}
+.bt_icon a, .bt_link a{
+	padding: 10px;
+	text-decoration:none;
+	color:#FFF;
+}
+.bt_icon a:hover, .bt_link a:hover{
+	text-decoration:underline #000;
+	background:rgba(0,0,0,.1);
+}
+#txt_FT{
+	width:350px;
+	height:20px;
+	margin-left:auto;
+	margin-right:auto;
+	color:#FFF;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+}
+#links{
+	text-align:right;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	float:right;
+	margin-top: -210px;
+	margin-right: 80px;
+	padding: 20px;
+}
+.bt_link{
+	padding:7px;
+}
+
+/***************RODAPÉ************/
+
+/************###PG EULENIR###*********/
+
+#corpo{
+	width:100%;
+	height:910px;
+	background:#E1E3E3;
+}
+#titulo{
+	padding-top:90px;
+	width:350px;
+	height: 100px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 45px;
+	font-size:85px;
+	color:#000;
+	font-family:"Evertone Script";
+	text-align:center;
+	text-decoration:underline #589CA1;
+}
+#back_EULE{
+	background:#F0F0F0;
+	border-radius: 30px;
+	margin-top:20px;
+	width: 1250px;
+	height: 600px;
+	margin-left:auto;
+	margin-right:auto;
+	border:#666 1px solid;
+}
+#img_eule{
+	margin-top:95px;
+	float:left;
+	width: 440px;
+	height:450px;
+}
+#nav_tabs{
+	background:#E1E3E3;
+	border-bottom-left-radius: 130px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius:5px;
+	border-top-left-radius: 130px;
+	width: 980px;
+	height:480px;
+	margin-left:230px;
+	margin-top: 85px;
+}
+#nav_tabs ul{
+	list-style: none;
+}
+#nav_tabs ul li{
+	float:left;
+}
+#nav_tabs label{
+	margin-top:-60px;
+	border-left:#000 solid 1px;
+	border-right:#000 solid 1px;
+	border-top:#000 solid 1px;
+	width: 200px;
+	display:block;
+	font-size: 20px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 20px;
+	color:#000;
+	text-align: center;
+	cursor:pointer;
+}
+.rd_tabs{
+	display:none;
+}
+.rd_tabs:checked ~ label{
+	color:#FFF;
+	background-color:#999;
+}
+.content{
+	position:absolute;
+	width: 760px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	display: none;
+	text-align:left;
+	margin-top: 50px;
+}
+.content1{
+	margin-left: -240px;
+	position:absolute;
+	width: 780px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	display: none;
+	text-align:left;
+	margin-top: 50px;
+}
+.rd_tabs:checked ~ .content{
+	display:block;
+}
+.rd_tabs:checked ~ .content1{
+	display:block;
+}
+
+/************###PG EULENIR###*********/
+
+/************###PG SERVIÇOS###*********/
+#corpo_serv{
+	width: auto;
+	height:5100px;
+	background:#E1E3E3;
+}
+#titulo_ser{
+	padding-top: 135px;
+	text-align:center;
+	font-family:"Evertone Script";
+	color:#000;
+	font-size:80px;
+	text-decoration:underline #589CA1;
+}
+#BLOCO_img{
+	margin-right:auto;
+	margin-left:auto;
+	width:1200px;
+	height:450px;
+	padding:25px;
+}
+#BLOCO_img a{
+	margin-left: 160px;
+	cursor:pointer;
+}
+#BLOCO_indi{
+	border-top-left-radius:35px;
+	border-top-right-radius:35px;
+	background:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	height:1980px;
+	width:1200px;
+	margin-top:50px;
+}
+#solo{
+	width:850px;
+	height: 900px;
+	margin-left: 150px;
+	border-radius:10px;
+}
+#sobreft{
+	margin-left:-40px;
+	text-align:center;
+	color:#FFF;
+	font-size:40px;
+	margin-top:-500px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:900;
+}
+#sobreft1{
+	text-align:center;
+	margin-top: 30px;
+	margin-bottom:380px;
+	color:#FFF;
+	font-size:28px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.title_solo{
+	color:#589CA1;
+	text-align:center;
+	padding:15px;
+	font-weight:900;
+	font-size:24px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.blocot{
+	width:1100px;
+	text-align:left;
+	margin-left: 50px;
+	margin-top: 10px;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#BLOCO_grup{
+	background:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	height:2250px;
+	width:1200px;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+#grup{
+	margin-left:50px;
+	width:1100px;
+	height: 850px;
+}
+#sobreft2{
+	text-align:center;
+	color:#000;
+	font-size:42px;
+	margin-top:-600px;
+	margin-bottom: 500px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:900;
+}
+/************###PG SERVIÇOS###*********/
+
+/************###PG CONTATO###*********/
+
+#corpo_cont{
+	width: auto;
+	height:1930px;
+	background:#E1E3E3;
+}
+#cont{
+	font-family:"Evertone Script";
+	font-size:90px;
+	text-align:center;
+	padding-top: 120px;
+	text-decoration:underline #589CA1;
+}
+#mapa_con{
+	width: 1200px; 
+	height:500px;
+	frameborder:0; 
+	border:#000 solid 2px;
+	border-radius: 25px;
+}
+#icons_CT{
+	margin:auto;
+	margin-top: 10px;
+	width: 1300px;
+	height: 400px;
+}
+#icons_CT a{
+	text-decoration:none;
+}
+#icons_CT ul{
+	display:flex;
+	list-style:none;
+}
+#icons_CT li{
+	padding-top: 40px;
+	margin: auto;
+}
+.icon_inside_up{
+	color:#666;
+	padding-bottom: 15px;
+	font-size:24px;
+	text-align:center;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+.icon_inside{
+	color:#589CA1;
+	padding-top: 30px;
+	font-size:18px;
+	text-align:center;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+#labels{
+	border-radius: 20px;
+	background:#999;
+	width: 900px;
+	height:710px;
+	margin:auto;
+	margin-top: 30px;
+}
+#forma{
+	padding-top: 50px;
+}
+.text{
+	margin-bottom: 30px;
+	text-align:left;
+	font-size:30px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.inside{
+	display: block;
+	margin: 0 0 20px;
+	padding: 15px 35px;
+	width: 60%;
+}
+.envia{
+	width:40%;
+	padding: 20px;
+	background: #589CA1;
+	color:#000;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	transition: 1s all;
+	cursor: pointer;
+}
+.envia:hover{
+	color:#FFF;
+	background:#003040;
+	transform: scale(1.1);
+}
+
+/************###PG CONTATO###*********/
